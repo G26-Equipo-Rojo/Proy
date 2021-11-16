@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.5</version>
+		<version>2.5.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.unab.marabierto</groupId>
-	<artifactId>marabierto</artifactId>
+	<groupId>com.unab.aerolinea</groupId>
+	<artifactId>aerolinea</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>marabierto</name>
-	<description>Demo project for Spring Boot</description>
+	<name>aerolinea</name>
+	<description>Proyecto de Aerolinea</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -25,8 +25,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-			
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
