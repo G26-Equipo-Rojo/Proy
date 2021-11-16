@@ -1,0 +1,96 @@
+use marabierto
+
+db.createCollection("productos")
+db.createCollection("categorias")
+
+//*-Agregar las Categorias
+
+db.categorias.insert([
+    {
+        "descripcion":"Frescos"
+    },
+    {
+        "descripcion":"Refrigerados"
+    },
+    {
+        "descripcion":"Congelados"
+    }
+    
+])
+
+db.categorias.find().pretty()
+
+
+
+//*- Productos
+
+db.productos.insert([
+    {
+      "codigo" : 1001,
+      "nombre" : "Calamar pequeño",
+      "descripcion" : "Calamar Pequeño",
+      "nrolote" : "AB10525-2520",
+      "prccompra" : 25000,
+      "prcventa" : 35000,
+      "cantidad" : 10,
+      idCategoria: ObjectId("618f23b10602808e1b1758fa")
+    },
+    { 
+        "codigo" : 2000,
+        "nombre" : "Cangrejo Pequeño",
+        "descripcion" : "Cangrejo Pequeño",
+        "nrolote" : "VG56586-69620",
+        "prccompra" : 35000,
+        "prcventa" : 50000,
+        "cantidad" : 5,
+        idCategoria: ObjectId("618f23b10602808e1b1758fa")
+    },
+    {
+        "codigo" : 3000,
+        "nombre" : "Bagre pequeño",
+        "descripcion" : "Bagre Pequeño",
+        "nrolote" :  "CDEF525-520",
+        "prccompra" : 15000,
+        "prcventa" : 35000,
+        "cantidad" : 30,
+        idCategoria: ObjectId("618f23b10602808e1b1758fa")
+    },
+    { 
+        "codigo" : 1001,
+        "nombre" : "Calamar Grande",
+        "descripcion" : "Calamar Grande",
+        "nrolote" : "AB10525-2525",
+        "prccompra" : 45000,
+        "prcventa" : 65000,
+        "cantidad" : 20,
+        idCategoria: ObjectId("618f23b10602808e1b1758fa")
+    },
+    { 
+        "codigo" : 1002,
+        "nombre" : "Calamar Mediano",
+        "descripcion" : "Calamar Mediano",
+        "nrolote" : "NGF55-211520",
+        "prccompra" : 30000,
+        "prcventa" : 45000,
+        "cantidad" : 2,
+        idCategoria: ObjectId("618f23b10602808e1b1758fa")
+
+    },
+    { 
+        "codigo" : 1002,
+        "nombre" : "Bagre Grande",
+        "descripcion" : "Bagre Grande",
+        "nrolote" : "FTG25-992520",
+        "prccompra" : 38000,
+        "prcventa" : 60000,
+        "cantidad" : 25,
+        idCategoria: ObjectId("618f23b10602808e1b1758fa")
+    }
+
+])
+
+db.productos.find().pretty()
+
+
+//nota el id categoria depende de la consulta que se realice de la base de datos 
+//faltaria cambiar los id para consultar
