@@ -70,7 +70,8 @@
                                         <hr class="dropdown-divider">
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="../index.html"> <fa icon="sign-out-alt" /> Cerrar sesión</a>
+                                        <router-link to="/" class="dropdown-item"> <fa icon="sign-out-alt" /> Cerrar sesión</router-link>
+                                        <!-- <a class="dropdown-item" href="../index.html"> <fa icon="sign-out-alt" /> Cerrar sesión</a> -->
                                     </li>
                                 </ul>
                             </div>

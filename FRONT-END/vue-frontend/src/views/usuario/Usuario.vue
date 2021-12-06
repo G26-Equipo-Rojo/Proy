@@ -1,7 +1,7 @@
 <template>
   <div class="usuario">
     <div class="table-responsive">
-        <button class="btn btn-outline-secondary m-1 " id="btnAgregarCategoria" data-bs-toggle="modal" data-bs-target="#modalGuardarCategoria">Agregar <fa icon="plus-circle" /></button>
+        <button class="btn btn-outline-secondary m-1 " id="btnAgregarCategoria" data-bs-toggle="modal" data-bs-target="#modalGuardarUsuario">Agregar <fa icon="plus-circle" /></button>
         <table class="table table-hover table-striped caption-top text-center">
           <caption><strong>Listado de usuarios</strong></caption>
           <thead class="table-dark">
@@ -27,7 +27,7 @@
             <td>
               <div>
                 <!-- Editar -->
-                <button type="button" @click="CargarId(item.id)" class="btn btn-outline-success btn-sm m-md-1" id="btnEditarCategoria" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario"><fa icon="edit" /></button>
+                <button type="button" @click="CargarId(item.id)" class="btn btn-outline-success btn-sm m-md-1" id="btnEditarUsuario" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario"><fa icon="edit" /></button>
                 <!-- Eliminar -->
                 <button type="button" @click="Eliminar(item.id)" class="btn btn-outline-danger btn-sm" id="btnEliminarCategoria"><fa icon="trash-alt" /></button>            
               </div>

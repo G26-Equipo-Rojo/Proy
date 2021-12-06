@@ -1,7 +1,7 @@
 <template>
-    <div id="GuardarCategoria">
-        <!-- Modal Categorias -->
-        <div class="modal fade" id="modalGuardarCategoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">    
+    <div id="GuardarUsuarios">
+        <!-- Modal Usuarios -->
+        <div class="modal fade" id="modalGuardarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">    
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -64,7 +64,7 @@ import axios from 'axios'
 import Toast from '../Toast.vue'
 
 export default {
-    name:'GuardarCategoria',
+    name:'GuardarUsuario',
     components:{
         Toast
     },
